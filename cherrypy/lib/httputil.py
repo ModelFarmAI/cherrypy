@@ -44,8 +44,8 @@ def urljoin(*atoms):
     original URL, even if either atom is blank.
     """
     url = '/'.join([x for x in atoms if x])
-    while '//' in url:
-        url = url.replace('//', '/')
+    #while '//' in url:
+    #    url = url.replace('//', '/')
     # Special-case the final url of "", and return "/" instead.
     return url or '/'
 
@@ -57,8 +57,8 @@ def urljoin_bytes(*atoms):
     original URL, even if either atom is blank.
     """
     url = b'/'.join([x for x in atoms if x])
-    while b'//' in url:
-        url = url.replace(b'//', b'/')
+    #while b'//' in url:
+    #    url = url.replace(b'//', b'/')
     # Special-case the final url of "", and return "/" instead.
     return url or b'/'
 
