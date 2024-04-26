@@ -58,7 +58,7 @@ params = dict(
     },
     packages=[
         'cherrypy', 'cherrypy.lib',
-        'cherrypy.tutorial', 'cherrypy.test',
+        'cherrypy.tutorial',
         'cherrypy.process',
         'cherrypy.scaffold',
     ],
